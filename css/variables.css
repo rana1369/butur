@@ -1,0 +1,77 @@
+:root {
+  /* Primary Color - Using Bootstrap's primary color system */
+  --bs-primary: rgba(137, 122, 227, 1);
+  --bs-primary-rgb: 137, 122, 227;
+  --bs-primary-bg-subtle: rgba(229, 226, 247, 1);
+  
+  /* Brand Colors - Project Specific */
+  --brand-color-1: var(--bs-primary);
+  --brand-color-1-hover: rgba(123, 108, 211, 1);
+  --brand-color-1-light: var(--bs-primary-bg-subtle);
+  
+  /* Background Colors */
+  --bg: var(--bs-body-bg, rgba(255, 255, 255, 1));
+  --bg-dark: rgba(16, 24, 64, 1);
+  --bg-secondary: rgba(230, 232, 240, 1);
+  
+  /* Text Colors - Using Bootstrap's text color system */
+  --font-color-1:  rgba(16, 24, 64, 1);
+  --font-color-2: rgba(109, 115, 143, 1);
+  --font-color-light: var(--bs-white, rgba(255, 255, 255, 1));
+  --font-color-muted: rgba(255, 255, 255, 0.61);
+  
+  /* Typography - Using Bootstrap's font system */
+  --font-family-primary: "Almarai", var(--bs-font-sans-serif, Helvetica, Arial, sans-serif);
+  --font-family-secondary: "Amiri", var(--bs-font-serif, Helvetica, serif);
+  
+  /* Font Sizes - Based on Bootstrap's type scale */
+  --font-size-xs: 0.875rem; /* 14px */
+  --font-size-sm: 1rem; /* 16px */
+  --font-size-base: 1.125rem; /* 18px */
+  --font-size-lg: 1.5rem; /* 24px */
+  --font-size-xl: 2rem; /* 32px */
+  --font-size-2xl: 3rem; /* 48px */
+  --font-size-3xl: 3.5rem; /* 56px */
+  
+  /* Spacing - Aligned with Bootstrap's spacing scale */
+  --spacing-xs: 0.5rem; /* 8px */
+  --spacing-sm: 1rem; /* 16px */
+  --spacing-md: 1.5rem; /* 24px */
+  --spacing-lg: 2rem; /* 32px */
+  --spacing-xl: 3rem; /* 48px */
+  --spacing-2xl: 4rem; /* 64px */
+  
+  /* Border Radius - Using Bootstrap's radius variables */
+  --radius-sm: var(--bs-border-radius-sm, 0.5rem); /* 8px */
+  --radius-md: var(--bs-border-radius, 0.75rem); /* 12px */
+  --radius-lg: var(--bs-border-radius-lg, 1.5rem); /* 24px */
+  --radius-full: 50%;
+  
+  /* Shadows - Enhanced Bootstrap shadows */
+  --shadow-sm: 0px 0px 8px rgba(51, 51, 51, 0.12);
+  --shadow-md: 0px 3.72px 18.59px rgba(60, 69, 111, 0.08);
+  --shadow-lg: 0px 4px 12px rgba(142, 95, 228, 0.24);
+  --shadow-glow: 0px 0px 50px rgba(151, 71, 255, 1);
+  
+  /* Transitions - Using Bootstrap's transition variables */
+  --transition-fast: 0.2s ease;
+  --transition-base: var(--bs-transition-base, 0.3s ease);
+  --transition-slow: 0.5s ease;
+  
+  /* Z-index - Project specific, above Bootstrap defaults */
+  --z-header: 1000;
+  --z-modal: 2000;
+  --z-tooltip: 3000;
+}
+
+[data-theme="dark"] {
+  --bg: rgba(16, 24, 64, 1);
+  --bg-dark: rgba(255, 255, 255, 1);
+  --bg-secondary: rgba(30, 35, 80, 1);
+  --font-color-1: rgba(200, 205, 220, 1);
+  --font-color-2: rgba(200, 205, 220, 1);
+  --brand-color-1-light: rgba(50, 40, 100, 1);
+    --font-color-light: rgba(16, 24, 64, 1);
+
+}
+

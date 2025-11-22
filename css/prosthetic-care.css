@@ -1,0 +1,404 @@
+
+.prosthetic-care-page {
+  min-height: 100vh;
+  background-color: var(--bg);
+}
+
+.prosthetic-hero {
+  background-image: url(./../images/prosthetic-hero-bg.webp);
+  background-size: cover;
+  background-position: center center;
+  color: rgba(255, 255, 255, 1);
+  padding-block-start: 10%;
+  position: relative;
+  overflow: hidden;
+}
+
+.prosthetic-hero .hero-title {
+  color: rgba(255, 255, 255, 1);
+  font-family: var(--font-family-primary);
+  font-weight: 700;
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.prosthetic-hero .hero-subtitle {
+  color: var(--brand-color-1);
+  font-family: var(--font-family-secondary);
+  margin-bottom: var(--spacing-md) !important;
+}
+
+.prosthetic-hero .hero-description {
+  color: rgba(255, 255, 255, 1);
+  font-family: var(--font-family-primary);
+  font-weight: 400;
+  font-size: var(--font-size-lg);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-xl);
+}
+
+.prosthetic-hero .hero-image {
+  position: relative;
+}
+
+.prosthetic-hero .hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
+.play-button {
+  position: absolute;
+  bottom: 20%;
+  right: -5%;
+  width: 94px;
+  height: 94px;
+  background-color: var(--bg);
+  border: none;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-glow);
+  transition: all var(--transition-base);
+  color: var(--brand-color-1);
+  z-index: 10;
+}
+
+.play-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 60px rgba(151, 71, 255, 0.8);
+}
+
+.play-button:focus {
+  outline: 2px solid var(--brand-color-1);
+  outline-offset: 4px;
+}
+
+/* Hero Features */
+.hero-features {
+  padding-inline-start: 9.5%;
+  padding-inline-end: 7%;
+}
+
+.stats {
+  text-align: center;
+  padding: var(--spacing-md);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.stat-value {
+  font-family: var(--font-family-primary);
+  font-weight: 700;
+  font-size: var(--font-size-3xl);
+  color: rgba(255, 255, 255, 1);
+  line-height: 1;
+}
+
+.stat-label {
+  font-family: var(--font-family-primary);
+  font-weight: 400;
+  font-size: var(--font-size-lg);
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+}
+
+.feature-card {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all var(--transition-base);
+}
+
+.feature-card:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-4px);
+}
+
+.feature-icon {
+  width: 87px;
+  height: 87px;
+  background-color: var(--brand-color-1);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.feature-title {
+  font-family: var(--font-family-primary);
+  font-weight: 700;
+  font-size: var(--font-size-xl);
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: var(--spacing-sm);
+}
+
+.feature-description {
+  font-family: var(--font-family-primary);
+  font-weight: 400;
+  font-size: var(--font-size-lg);
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.6;
+}
+
+.feature-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-family: var(--font-family-primary);
+  font-weight: 700;
+  font-size: var(--font-size-lg);
+  color: var(--brand-color-1);
+  text-decoration: none;
+  transition: all var(--transition-base);
+}
+
+.feature-link:hover {
+  color: rgba(255, 255, 255, 1);
+  transform: translateX(-4px);
+}
+
+/* About Section */
+.about-section {
+  padding: var(--spacing-2xl) 0;
+  background-color: var(--bg);
+}
+
+.about-text {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.about-image {
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  animation: fadeIn 0.8s ease-out 0.2s both;
+}
+
+.community-content {
+
+  border-radius: var(--radius-md);
+}
+
+.community-image {
+  margin-bottom: var(--spacing-md);
+}
+
+.community-description {
+  font-family: var(--font-family-primary);
+  font-weight: 400;
+  font-size: var(--font-size-lg);
+  color: var(--font-color-2);
+  max-width: 800px;
+}
+
+/* Mental Health Section */
+.mental-health-section {
+  padding: var(--spacing-2xl) 0;
+  background-color: var(--brand-color-1-light);
+}
+
+.mental-health-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.mental-health-content .section-title {
+  color: var(--brand-color-1);
+  font-family: var(--font-family-secondary);
+  font-weight: 700;
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-md);
+}
+
+.mental-health-content .section-subtitle {
+  color: var(--font-color-1);
+  font-family: var(--font-family-primary);
+  font-weight: 700;
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.4;
+}
+
+.mental-health-content .section-description {
+  color: var(--font-color-2);
+  font-family: var(--font-family-primary);
+  font-weight: 400;
+  font-size: var(--font-size-lg);
+  line-height: 1.8;
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Video Container */
+.video-container {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  background-color: var(--font-color-1);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.video-poster {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 94px;
+  height: 94px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  z-index: 10;
+}
+
+.video-play-button:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.video-play-button:focus {
+  outline: 2px solid var(--brand-color-1);
+  outline-offset: 4px;
+  border-radius: var(--radius-full);
+}
+
+/* Donation Section */
+.donation-section {
+  padding: var(--spacing-2xl) 0;
+  background-color: rgba(229, 226, 247, 0.47);
+}
+
+.donation-content {
+  padding: var(--spacing-xl);
+}
+
+.donation-content .section-title {
+  color: var(--brand-color-1);
+  font-family: var(--font-family-secondary);
+  font-weight: 400;
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-sm);
+}
+
+.donation-content .section-subtitle {
+  color: var(--font-color-1);
+  font-family: var(--font-family-primary);
+  font-weight: 700;
+  font-size: var(--font-size-2xl);
+  line-height: 1.5;
+}
+
+/* Active Nav Link */
+.nav-link.active {
+  color: var(--brand-color-1);
+  font-weight: 700;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .prosthetic-hero {
+    padding: 120px 0 60px;
+  }
+  
+  .prosthetic-hero .hero-title {
+    font-size: var(--font-size-xl);
+  }
+  
+  .prosthetic-hero .hero-subtitle {
+    font-size: var(--font-size-lg);
+  }
+  
+  .play-button {
+    width: 70px;
+    height: 70px;
+    bottom: 10%;
+    right: 5%;
+  }
+  
+  .stat-value {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .mental-health-content .section-subtitle {
+    font-size: var(--font-size-xl);
+  }
+}
+
+@media (max-width: 768px) {
+  .prosthetic-hero .hero-title {
+    font-size: var(--font-size-lg);
+  }
+  
+  .prosthetic-hero .hero-description {
+    font-size: var(--font-size-base);
+  }
+  
+  .play-button {
+    width: 60px;
+    height: 60px;
+    bottom: 5%;
+    right: 42%;
+  }
+  
+  .feature-card {
+    padding: var(--spacing-md);
+  }
+  
+  .community-content {
+    padding: var(--spacing-md);
+  }
+  
+  .video-play-button {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .stat-value {
+    font-size: var(--font-size-xl);
+  }
+  
+  .stat-label {
+    font-size: var(--font-size-base);
+  }
+  
+  .feature-icon {
+    width: 64px;
+    height: 64px;
+  }
+  
+  .feature-title {
+    font-size: var(--font-size-lg);
+  }
+  
+  .feature-description {
+    font-size: var(--font-size-base);
+  }
+}
+
